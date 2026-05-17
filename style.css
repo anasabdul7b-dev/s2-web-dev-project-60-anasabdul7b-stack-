@@ -40,3 +40,17 @@ main { padding-bottom: 3rem; }
 .btn-primary:hover { background: var(--brand-dark); }
 .btn-secondary { background: #ffffff18; border-color: #ffffff55; }
 .btn-secondary:hover { background: #ffffff24; }
+/* Section text and spacing */
+.section-head, .intro { margin: 2rem 0 1rem; }
+.section-head h2 { margin: 0 0 0.35rem; }
+.section-head p, .intro p, .deal-copy p, .contact-side p { color: var(--muted); }
+.section-head p { margin: 0; }
+.intro p { margin: 0.35rem 0 0; }
+.deal-copy p { margin: 0.45rem 0 0.75rem; }
+.contact-side p { margin: 0 0 0.7rem; }
+
+/* Grid based content blocks */
+.cards, .highlights, .form-layout, .sheet, .deal { display: grid; }
+.cards, .form-layout { gap: 1rem; }
+.cards { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.highlights { margin-top: 1.5rem; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
