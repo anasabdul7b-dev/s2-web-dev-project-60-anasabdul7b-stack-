@@ -20,3 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("booking-form");
   var msg = document.getElementById("form-message");
   if (!form || !msg) return;
+   // Handle form submit message
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    var name = document.getElementById("name").value.trim();
+    var tripName = sel.options[sel.selectedIndex].text;
+    msg.textContent = "Thanks, " + name + ". Your request for " + tripName + " has been received. Our team will contact you shortly.";
+    form.reset();
+  });
+});
