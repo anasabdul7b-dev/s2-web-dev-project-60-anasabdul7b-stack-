@@ -13,3 +13,17 @@
 * { box-sizing: border-box; }
 body { margin: 0; font: 16px/1.6 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
 a { color: inherit; }
+/* Header and container layout */
+.top { position: sticky; top: 0; z-index: 10; background: #ffffffed; border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
+.top-wrap, main, .footer-wrap { max-width: 72rem; margin: 0 auto; padding-inline: 1.25rem; }
+.top-wrap { padding-block: 0.9rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+main { padding-bottom: 3rem; }
+.footer-wrap { padding-block: 1.1rem; }
+.logo { font: 700 1.1rem/1 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; letter-spacing: 0.2px; text-decoration: none; }
+
+/* Navigation and hero controls */
+.nav, .hero-actions { display: flex; flex-wrap: wrap; }
+.nav { gap: 0.9rem; }
+.hero-actions { gap: 0.8rem; margin-top: 1.3rem; }
+.nav a { color: var(--muted); font-weight: 500; text-decoration: none; }
+.nav a:hover, .nav a.current { color: var(--brand); }
