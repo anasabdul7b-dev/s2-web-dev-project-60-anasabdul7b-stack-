@@ -1,0 +1,11 @@
+:root {
+  /* Global theme color tokens */
+  --bg: #f6f8fb;
+  --text: #1b2430;
+  --muted: #5c6977;
+  --card: #fff;
+  --line: #d9e0ea;
+  --brand: #1f6feb;
+  --brand-dark: #175bc2;
+  --accent: #0f766e;
+}
