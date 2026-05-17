@@ -19,3 +19,27 @@
     </nav>
   </div>
 </header>
+<main>
+  <!-- Booking page intro text -->
+  <div class="intro">
+    <h1>Start Your Booking</h1>
+    <p>Share a few details and our team will prepare a tailored next-step plan for your selected trip.</p>
+  </div>
+
+  <!-- Booking form inputs area -->
+  <div class="form-layout">
+    <form class="sheet" id="booking-form">
+      <label>Full Name <input name="name" id="name" required autocomplete="name"></label>
+      <label>Email Address <input type="email" name="email" id="email" required autocomplete="email"></label>
+      <label>Select a Trip
+        <select name="trip" id="trip-select" required>
+          <option value="" selected disabled>Choose one option</option>
+          <option value="mountain">Alpine Mountain Escape</option>
+          <option value="safari">East Africa Safari Circuit</option>
+          <option value="diving">Tropical Diving Getaway</option>
+        </select>
+      </label>
+      <label>Travel Notes <textarea name="notes" id="notes" rows="4" placeholder="Preferred dates, dietary restrictions, travel pace, or other details"></textarea></label>
+      <button type="submit" class="btn btn-primary">Submit Request</button>
+      <p class="msg" id="form-message" role="status"></p>
+    </form>
