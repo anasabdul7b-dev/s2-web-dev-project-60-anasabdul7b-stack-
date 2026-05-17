@@ -85,3 +85,9 @@ main { padding-bottom: 3rem; }
 .msg { margin: 0.2rem 0 0; min-height: 1.3em; color: var(--accent); font-weight: 500; }
 .contact-side h3 { margin: 0 0 0.4rem; }
 .footer { margin-top: 2rem; color: var(--muted); border-top: 1px solid var(--line); }
+/* Desktop layout adjustments only */
+@media (min-width: 48rem) {
+  .deal { grid-template-columns: 18rem 1fr; }
+  .deal img { height: 100%; }
+  .form-layout { grid-template-columns: 1.3fr 0.8fr; align-items: start; }
+}
