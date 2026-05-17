@@ -9,3 +9,7 @@
   --brand-dark: #175bc2;
   --accent: #0f766e;
 }
+/* Base reset and typography */
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+a { color: inherit; }
