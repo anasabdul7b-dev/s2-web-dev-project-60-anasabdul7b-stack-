@@ -54,3 +54,17 @@ main { padding-bottom: 3rem; }
 .cards, .form-layout { gap: 1rem; }
 .cards { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
 .highlights { margin-top: 1.5rem; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
+/* Card and deal containers */
+.card, .deal, .sheet, .contact-side { background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+.card, .deal { overflow: hidden; }
+.card { text-decoration: none; box-shadow: 0 8px 20px #1b24300f; transition: transform 140ms ease; }
+.card:hover { transform: translateY(-2px); }
+.card img, .deal img { width: 100%; object-fit: cover; }
+.card img { aspect-ratio: 16/10; }
+.deal img { height: 15rem; }
+
+/* Card text content styling */
+.card-copy { padding: 0.9rem 0.95rem 1rem; }
+.card-copy strong { display: block; margin-bottom: 0.25rem; }
+.card-copy span { font-size: 0.95rem; color: var(--muted); }
+.pill { padding: 0.55rem 0.85rem; border: 1px solid #d3e2fd; border-radius: 999px; text-align: center; font-weight: 500; color: #1a4f97; background: #ecf3ff; }
